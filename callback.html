@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SideQuest.EXE - Login callback</title>
+<style>body{font:17px/1.6 system-ui,sans-serif;max-width:760px;margin:40px auto;padding:0 16px;color:#111}nav a{margin-right:14px}h1{font-size:26px}</style></head><body>
+<nav><a href="./">Home</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></nav>
+<h1>Login callback</h1>
+<p>Copy the text below and paste it back to the tool. Do not share it with anyone else.</p>
+<pre id="o" style="background:#f3f3f3;padding:12px;white-space:pre-wrap;word-break:break-all">(no code in the address)</pre>
+<script>var u=new URL(location.href);var c=u.searchParams.get("code"),s=u.searchParams.get("state"),e=u.searchParams.get("error");
+document.getElementById("o").textContent=e?("error: "+e):c?("code: "+c+"\nstate: "+s):"(no code in the address)";
+history.replaceState(null,"",location.pathname);</script></body></html>
